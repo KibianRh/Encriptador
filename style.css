@@ -1,0 +1,326 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background: #05101B;
+}
+
+header{
+    display: flex;
+    height: 4.2em;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-right: 10%;
+    margin-bottom: -45px;
+    align-items: center; 
+}
+
+footer{
+    width: 100%;
+    padding: 0 2em 1em 2em;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    justify-content: center; 
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+    
+}
+
+main{
+    display: flex;
+    padding: 35px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#cont-logo{
+    width: 11em;
+}
+
+
+.logos{
+    width: auto;
+    height: 35px;
+    margin: 15px -13px;
+    
+}
+
+
+
+.z-analizador{
+    
+    width: 60%;
+}
+#conte-entrada{
+    height: 100%;
+
+}
+
+
+
+.analizador{    
+    background: #05101B;
+    border: none;
+    width: 80%;
+    height: 11.6em;
+    padding: 4%;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    color: whitesmoke;
+    resize: none;
+    border: 1px solid #099398
+    /* box-shadow: 0px 4px 20px  #015557; */
+
+}
+
+color{
+    color: rgb(229, 15, 15);
+}
+
+.analizador:hover{
+    box-shadow: 0px 4px 50px  #015557;
+    
+}
+
+.analizador:focus{
+    outline: none
+}
+
+.instrucciones{
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    justify-content: center;
+}
+
+#admiracion{
+    height: 1.5em;
+
+}
+
+
+.btn-1, .btn-2{
+    font-family: 'Inter', sans-serif;
+    width: 12em;
+    height: 3.7em;
+    min-height: 3.7em;
+    border: 1px solid #33E5EB;
+    border-radius: 16px;
+    margin: 0 0.3em;
+    cursor: pointer;
+
+}
+
+.btn-1:hover{
+    background-color: #33E5EB;
+    scale: 99%;
+    cursor: pointer;
+    color: black;
+    box-shadow: 1px 6px 30px  #017478;
+}
+
+.btn-2:hover{
+    background-color: #33E5EB;
+    scale: 99%;
+    cursor: pointer;
+    color: black;
+    box-shadow: 1px 6px 30px  #017478;
+}
+
+
+.btn-1{
+    background-color: #05101B;
+    color: white;
+}
+
+.btn-2{
+    background-color: #05101B;
+    color: white;
+}
+
+
+.z-mensajes{
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    /* border: 1px solid #099398; */
+    border-radius: 32px;
+    background: #040c1e;
+    width: 25%;
+    color:#ffffff;
+    padding: 1.1em;
+}
+
+.z-mensajes .alert{
+    font-size: 1.3em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.z-mensajes .m-recibido{
+    font-size: 1em;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    width: 96%; 
+    padding: 2%;
+    overflow: auto;
+    height: 85%;
+}
+
+.z-analizador, .z-mensajes{
+    height: 30em;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.logo-lupa{
+    padding-top: 4em;
+    max-width: 170px;
+    width:80%;
+}
+
+#container {
+    height: 1em;
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+#git, #linkedin{
+    color: #33E5EB;
+    font-size: 25px;
+    margin: 0px 10px;
+    padding-bottom: 10px;
+    justify-content: space-around;
+}
+
+
+/* ESTILOS PARA TABLETAS */
+
+@media screen and (max-width:770px){
+    html .logo-lupa{
+        display: block;
+        display: none;
+    }
+
+    header{
+        width: 100%;
+        margin-bottom: -30px;
+        padding-left: 6%;
+        padding-right: 1%;
+    }
+
+    body{
+        width: auto;
+    }
+
+    main{
+        display: flex;
+        padding: 30px;
+        width: 100%;
+        flex-direction: column;        
+    }
+    
+    .analizador, .z-mensajes{
+        width: 100%;    
+    }
+
+    .z-analizador{
+        height: 100%;
+    }
+
+    .analizador{
+        height: 13.5em;
+    }
+    
+    .z-botones{
+        display:inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5px 0 5px;
+    }
+
+    .btn-1, .btn-2 {
+        height: 60px;
+        width: 42%;
+        margin-top: 8px;
+
+    }
+
+    #admiracion{
+        height: 1.2em;
+    }
+
+    .instrucciones{
+        font-family: 'Inter', sans-serif;
+        margin-top: 12px;
+        margin-left: 0;
+    }
+
+    .btn-1, .btn-2, .instrucciones{
+        font-size: 26px;
+    }
+
+    .z-mensajes{
+        display: inline-flex;
+        align-items: centr;
+        margin-top: 25px; 
+        justify-content: center;
+        margin: 26px 0 0 0;
+        width: 90%;
+        height: 16em;
+        color:#343A40;
+    }
+
+    .z-mensajes .alert{
+        font-size: 1.8em;
+        margin-bottom: 4px;    
+    }
+    
+    .z-mensajes .m-recibido{
+        font-size: 1.5em;
+        font-weight: normal;
+    }
+
+}
+
+/* ESTILOS PARA CELULARES */
+
+@media screen and (max-width:480px){
+    
+    .z-botones{
+        display:inline-flex;
+        flex-direction: column;        
+    }
+
+    .btn-1, .btn-2, .instrucciones{
+        font-size: 16px;
+    }
+
+    .z-mensajes .alert{
+        font-size: 1.3em;    
+    }
+    
+    .z-mensajes .m-recibido{
+        font-size: 1.2em;
+    }
+}
